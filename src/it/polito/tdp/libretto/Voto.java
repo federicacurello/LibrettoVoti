@@ -39,10 +39,15 @@ public class Voto {
 
 
 	public Voto(int voto, String corso, LocalDate data) {
-		super();
 		this.voto = voto;
 		this.corso = corso;
 		this.data = data;
+	}
+
+
+	@Override
+	public String toString() {
+		return String.format("Voto [voto=%s, corso=%s, data=%s]", voto, corso, data);
 	}
 	
 	
